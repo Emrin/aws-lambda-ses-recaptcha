@@ -20,10 +20,7 @@ exports.handler = async function (event, context) {
 
       // ReCaptcha
       if (!data.token) throw new Error('No Token'); // This immediately sends an error.
-      const recaptchaUrl =
-        `https://www.google.com/recaptcha/api/siteverify
-        ?secret=${process.env.RECAPTCHA_SECRET_KEY}
-        &response=${data.token}`;
+      const recaptchaUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${data.token}`;
 
       const recaptcha = await axios.post(recaptchaUrl, {});
 

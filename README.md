@@ -16,7 +16,8 @@ Your front end should send a POST request to your function's endpoint with a bod
 
 # Documentation
 
-[AWS Lambda and NodeJS](https://docs.aws.amazon.com/lambda/latest/dg/lambda-nodejs.html)
+Using [AWS Lambda with NodeJS](https://docs.aws.amazon.com/lambda/latest/dg/lambda-nodejs.html). \
+To customize your email, check the [AWS SES API Reference](https://docs.aws.amazon.com/ses/latest/APIReference/API_SendEmail.html#API_SendEmail_RequestParameters).
 
 # Optional Configuration
 If you're new to AWS Lambda you should start with
